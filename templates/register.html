@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<form action="/register/create" method="post">
+    <input type="text" name="username" placeholder="User name: ">
+    <input type="text" name="email" required placeholder="Email: ">
+    <input type="text" name="password" required placeholder="Password: ">
+    <input type="text" name="confirm_password" required placeholder="Confirm Password: ">
+    <input type="number" name="role" required placeholder="User Role: ">
+    <button type="submit">
+        Зарегистрироваться
+    </button>
+</form>
+
+{% endblock %}
